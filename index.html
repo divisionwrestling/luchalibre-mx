@@ -83,6 +83,202 @@
   </header>
   <nav>
     <a href="#luchadores">Luchadores</a>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucha Libre MX - WWE Superestrellas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Black', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background-color: #c40000;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .banner {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f8/LuchaLibre_Mask.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px #000;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .social a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+    .social a:hover {
+      color: #ffd700;
+    }
+
+    /* Estilos para los luchadores */
+    .luchadores-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px 0;
+    }
+    .luchador {
+      background-color: #222;
+      border-radius: 8px;
+      padding: 15px;
+      max-width: 200px;
+      text-align: center;
+      box-shadow: 0 0 10px #000;
+      transition: transform 0.3s ease;
+      color: #eee;
+    }
+    .luchador:hover {
+      transform: scale(1.05);
+    }
+    .luchador img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      height: 200px;
+    }
+    .luchador h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+    }
+    .luchador p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lucha Libre MX</h1>
+  </header>
+  <nav>
+    <a href="#luchadores">Luchadores</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#noticias">Noticias</a>
+    <a href="#historia">Historia</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="banner">
+    ¡El ring nunca descansa!
+  </div>
+
+  <section id="luchadores">
+    <h2>Superestrellas WWE</h2>
+    <div id="container" class="luchadores-container"></div>
+  </section>
+
+  <section id="eventos">
+    <h2>Próximos Eventos</h2>
+    <ul>
+      <li>03/06/2025 - Arena México - "Noche de Campeones"</li>
+      <li>10/06/2025 - Coliseo de Guadalajara - "Duelo de Leyendas"</li>
+    </ul>
+  </section>
+  <section id="noticias">
+    <h2>Noticias Recientes</h2>
+    <p>Últimas novedades, entrevistas y rumores del cuadrilátero.</p>
+  </section>
+  <section id="historia">
+    <h2>Historia de la Lucha Libre</h2>
+    <p>Desde El Santo hasta Místico, descubre cómo nació esta tradición y quiénes han marcado época.</p>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes una pregunta o deseas colaborar? Escríbenos: contacto@luchalibremx.com</p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Lucha Libre MX. Todos los derechos reservados.
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script>
+    const luchadores = [
+      {nombre: "Roman Reigns", imagen: "https://upload.wikimedia.org/wikipedia/commons/4/49/Roman_Reigns_at_WrestleMania_31.jpg", descripcion: "Actual campeón y figura dominante en WWE, conocido como \"The Tribal Chief\"."},
+      {nombre: "Becky Lynch", imagen: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Becky_Lynch_at_WrestleMania_35.jpg", descripcion: "La \"Man\", campeona carismática y luchadora top."},
+      {nombre: "Seth Rollins", imagen: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Seth_Rollins_at_WrestleMania_35.jpg", descripcion: "Hábil y versátil luchador, ex campeón mundial."},
+      {nombre: "Charlotte Flair", imagen: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Charlotte_Flair_at_WrestleMania_35.jpg", descripcion: "Reina indiscutible de la división femenina."},
+      {nombre: "Brock Lesnar", imagen: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Brock_Lesnar_WrestleMania_31.jpg", descripcion: "Poderoso atleta, ex campeón universal."},
+      {nombre: "Sasha Banks", imagen: "https://upload.wikimedia.org/wikipedia/commons/5/57/Sasha_Banks_at_WrestleMania_34.jpg", descripcion: "Icono femenino y múltiple campeona."},
+      {nombre: "AJ Styles", imagen: "https://upload.wikimedia.org/wikipedia/commons/3/3f/AJ_Styles_in_2016.jpg", descripcion: "Técnico y ágil, uno de los mejores luchadores."},
+      {nombre: "Bayley", imagen: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Bayley_2017.jpg", descripcion: "Carismática y valiente luchadora."},
+      {nombre: "Finn Bálor", imagen: "https://upload.wikimedia.org/wikipedia/commons/8/88/Finn_Balor_in_2016.jpg", descripcion: "Creativo y dinámico, ex campeón."},
+      {nombre: "Rhea Ripley", imagen: "https://upload.wikimedia.org/wikipedia/commons/9/97/Rhea_Ripley_WWE.jpg", descripcion: "Joven estrella con gran futuro."},
+      {nombre: "John Cena", imagen: "https://upload.wikimedia.org/wikipedia/commons/3/3c/John_Cena_April_2016.jpg", descripcion: "Leyenda viva y múltiple campeón."},
+      {nombre: "Asuka", imagen: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Asuka_2017.jpg", descripcion: "Imparable luchadora japonesa."},
+      {nombre: "Edge", imagen: "https://upload.wikimedia.org/wikipedia/commons/2/27/Edge_WrestleMania_31.jpg", descripcion: "Veterano con gran legado."},
+      {nombre: "Alexa Bliss", imagen: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Alexa_Bliss_2017.jpg", descripcion: "Atrevida y versátil luchadora."},
+      {nombre: "Drew McIntyre", imagen: "https://upload.wikimedia.org/wikipedia/commons/2/22/Drew_McIntyre_in_2018.jpg", descripcion: "Fuerte y resiliente campeón."},
+      {nombre: "Natalya", imagen: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Natalya_Neidhart_at_WrestleMania_34.jpg", descripcion: "Veterana y técnica destacada."},
+      {nombre: "Kofi Kingston", imagen: "https://upload.wikimedia.org/wikipedia/commons/9/98/Kofi_Kingston_in_2019.jpg", descripcion: "Atlético y carismático luchador."},
+      {nombre: "Carmella", imagen: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Carmella_in_2018.jpg", descripcion: "Estrella femenina con gran estilo."},
+      {nombre: "Shinsuke Nakamura", imagen: "https://upload.wikimedia.org/wikipedia/commons/1/14/Shinsuke_Nakamura_in_2017.jpg", descripcion: "Carismático y técnico japonés."},
+      {nombre: "Trish Stratus", imagen: "https://upload.wikimedia.org/wikipedia/commons/2/29/Trish_Stratus_2012.jpg", descripcion: "Leyenda femenina icónica."},
+      {nombre: "Paige", imagen: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Paige_in_2014.jpg", descripcion: "Joven estrella que revolucionó la división femenina."}
+    ];
+
+    const container = document.getElementById('container');
+    luchadores.forEach(luchador => {
+      const div = document.createElement('div');
+      div.classList.add('luchador');
+      div.innerHTML =
+
     <a href="#eventos">Eventos</a>
     <a href="#noticias">Noticias</a>
     <a href="#historia">Historia</a>
